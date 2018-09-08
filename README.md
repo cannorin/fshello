@@ -1,7 +1,17 @@
 fshello
 =======
 
-* How to publish a .NET Core global tool
+Hello World from F#!
+
+## How to say hello
+
+1. Get the .NET Core SDK: https://www.microsoft.com/net/download
+
+2. `dotnet tool install -g fshello`
+
+3. `fshello`
+
+## How to publish a .NET Core global tool
 
 1. Get the NuGet CLI tool: https://docs.microsoft.com/en-us/nuget/tools/nuget-exe-cli-reference
 
@@ -12,4 +22,8 @@ fshello
 4. Execute `nuget setapikey <your api key>`
 
 5. `make pack && nuget push bin/Release/<name>.<version>.nupkg`
+
+6. Wait until it get published
+
+7. `dotnet tool install -g <name>` to install
 
